@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BikeGram</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra Lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Instagram</h1>
+            </div>
+            <nav>
+                <a href="#feed" class="active"><span class="icon">🏠</span> Página inicial</a>
+                <a href="#"><span class="icon">🔍</span> Pesquisa</a>
+                <a href="#"><span class="icon">🧭</span> Explorar</a>
+                <a href="#"><span class="icon">🎥</span> Reels</a>
+                <a href="#"><span class="icon">✉️</span> Mensagens</a>
+                <a href="#"><span class="icon">🔔</span> Notificações</a>
+                <a href="#"><span class="icon">➕</span> Criar</a>
+                <a href="#profile"><span class="icon">👤</span> Perfil</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#"><span class="icon">🧵</span> Threads</a>
+                <a href="#"><span class="icon">≡</span> Mais</a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main>
+            <!-- Stories -->
+            <div class="stories">
+                <div class="story">
+                    <img src="https://via.placeholder.com/56" alt="Story">
+                    <span>douglas...</span>
+                </div>
+                <div class="story">
+                    <img src="https://via.placeholder.com/56" alt="Story">
+                    <span>bomba_047</span>
+                </div>
+                <div class="story">
+                    <img src="https://via.placeholder.com/56" alt="Story">
+                    <span>imcaynsp</span>
+                </div>
+                <div class="story">
+                    <img src="https://via.placeholder.com/56" alt="Story">
+                    <span>ladiborba</span>
+                </div>
+                <div class="story">
+                    <img src="https://via.placeholder.com/56" alt="Story">
+                    <span>buzera_of...</span>
+                </div>
+                <div class="story">
+                    <img src="https://via.placeholder.com/56" alt="Story">
+                    <span>neymarjr</span>
+                </div>
+            </div>
+
+            <!-- Feed de Postagens -->
+            <section id="feed">
+                <div id="posts"></div>
+
+                <!-- Formulário para nova postagem -->
+                <div class="post-form">
+                    <h3>Nova Postagem</h3>
+                    <input type="text" id="post-image" placeholder="URL da imagem ou vídeo">
+                    <input type="text" id="post-caption" placeholder="Legenda">
+                    <button onclick="addPost()">Postar</button>
+                </div>
+            </section>
+
+            <!-- Perfil -->
+            <section id="profile">
+                <h2>Perfil</h2>
+                <div class="profile-info">
+                    <img src="https://via.placeholder.com/100" alt="Foto de perfil" class="profile-pic">
+                    <div>
+                        <h3>@VendedorDeBikes</h3>
+                        <p>Vendedor de bikes elétricas e de marchas</p>
+                    </div>
+                </div>
+                <h3>Postagens</h3>
+                <div id="profile-posts"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

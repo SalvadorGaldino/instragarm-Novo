@@ -1,0 +1,300 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #262626;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 245px;
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #dbdbdb;
+    padding: 20px 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin-bottom: 20px;
+    padding: 0 12px;
+}
+
+.logo h1 {
+    font-family: "Lobster", cursive;
+    font-size: 28px;
+    margin: 0;
+    color: #262626;
+}
+
+.sidebar nav {
+    flex-grow: 1;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 4px 0;
+    text-decoration: none;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.sidebar a:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar a.active {
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 16px;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+}
+
+/* Main Content */
+main {
+    margin-left: 245px;
+    padding: 20px;
+    width: calc(100% - 245px);
+}
+
+/* Stories */
+.stories {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.story {
+    text-align: center;
+    margin: 0 8px;
+}
+
+.story img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid #dbdbdb;
+    padding: 2px;
+}
+
+.story span {
+    display: block;
+    font-size: 12px;
+    color: #262626;
+    margin-top: 4px;
+}
+
+/* Posts */
+section {
+    max-width: 614px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 24px;
+    border-radius: 3px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+    border-bottom: 1px solid #efefef;
+}
+
+.post-user {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.post-media {
+    position: relative;
+}
+
+.post img, .post video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.like-btn.liked {
+    color: #ed4956;
+}
+
+.post-actions span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.post-caption {
+    padding: 0 16px 8px;
+    font-size: 14px;
+}
+
+.post-caption strong {
+    font-weight: 600;
+}
+
+.translate-link {
+    display: block;
+    color: #00376b;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 5px 0 0 16px;
+    text-decoration: none;
+}
+
+.comment-section {
+    padding: 0 16px 8px;
+    border-top: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+}
+
+.comment-section input {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.comment-section button {
+    background: none;
+    border: none;
+    color: #0095f6;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.comments {
+    padding: 0 16px 8px;
+    font-size: 14px;
+}
+
+.comments p {
+    margin: 4px 0;
+}
+
+.comment-count {
+    color: #8e8e8e;
+    font-size: 14px;
+    margin: 0 16px 8px;
+    cursor: pointer;
+}
+
+/* Formulário de Postagem */
+.post-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 24px;
+}
+
+.post-form h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.post-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+.post-form button {
+    background-color: #0095f6;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Perfil */
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.profile-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
